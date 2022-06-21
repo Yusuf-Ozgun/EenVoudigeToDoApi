@@ -1,18 +1,38 @@
 ﻿using EenVoudigeToDoApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Helpers;
 
 namespace EenVoudigeToDoApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ToDoController : ControllerBase
+    public class ToDoController : Controller
     {
         private IToDoRepository _repo;
-
+        
         public ToDoController(IToDoRepository repo)
         {
             this._repo = repo;
+            foreach (var item in repo.GetAll())
+            {
+                if(item.VervalDatum.Date < DateTime.Today)
+                {
+
+                    // POST: Email
+                    [HttpPost]
+                    IActionResult SendEmail()
+                    {
+                        string useremail = User.ToString() + "@hotmail.com";
+                        string subject = "Automatische mail vervaldatum.";
+                        string body = "Uw todo is vervallen. Gelieve contact op te nemen met de systeembeheerder.";
+
+                        WebMail.Send(useremail, subject, body, null, null, null, true, null, null, null, null, null, null);
+                        ViewBag.msg = "email is succesvol verzonden!";
+                        return View();
+                    }
+                }
+            }
         }
         // GET: api/ToDo
         [HttpGet]

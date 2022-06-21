@@ -10,6 +10,8 @@ namespace EenVoudigeToDoApi.Models
         public DateTime Creatie { get; set; }
         public DateTime LaatsteAanpassing { get; set; }
         public DateTime VervalDatum { get; set; }
+        public int? UserId { get; set; }
+        public User? User { get; set; }
         #endregion
 
         #region Ctor
