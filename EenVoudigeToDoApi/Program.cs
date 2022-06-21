@@ -8,6 +8,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddSingleton<IToDoRepository, ToDoRepository>();
 builder.Services.AddSingleton<IBoardRepository, BoardRepository>();
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -6,11 +6,11 @@ namespace EenVoudigeToDoApi.Models
     //CRUD
     public interface IToDoRepository
     {
-        void AddToDo(ToDo country);
+        void AddToDo(ToDo toDo);
         ToDo GetToDo(int id);
         IEnumerable<ToDo> GetAll();
-        void RemoveToDo(ToDo country);
-        void UpdateToDo(ToDo country);
+        void RemoveToDo(ToDo toDo);
+        void UpdateToDo(ToDo toDo);
         bool ExistsToDo(int id);
     }
 }
