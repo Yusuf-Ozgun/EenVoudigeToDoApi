@@ -5,7 +5,7 @@ namespace EenVoudigeToDoApi.Models
     {
         private readonly Dictionary<int, Board> _data = new();
         public List<ToDo> toDos;
-        public ToDo todo = new ToDo(6,"Werken",DateTime.Now.AddDays(-6),DateTime.Now.AddDays(-5));
+        public ToDo todo = new ToDo(6,"Werken",DateTime.Now.AddDays(-6),DateTime.Now.AddDays(-5), DateTime.Today.AddDays(100));
 
         public BoardRepository()
         {

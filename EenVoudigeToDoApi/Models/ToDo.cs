@@ -9,15 +9,17 @@ namespace EenVoudigeToDoApi.Models
         public string Titel { get; set; }
         public DateTime Creatie { get; set; }
         public DateTime LaatsteAanpassing { get; set; }
+        public DateTime VervalDatum { get; set; }
         #endregion
 
         #region Ctor
-        public ToDo(int id, string titel, DateTime creatie, DateTime laatsteAanpassing)
+        public ToDo(int id, string titel, DateTime creatie, DateTime laatsteAanpassing, DateTime vervalDatum)
         {
             Id = id;
             Titel = titel;
             Creatie = creatie;
             LaatsteAanpassing = laatsteAanpassing;
+            VervalDatum = vervalDatum;
         }
         #endregion
     }

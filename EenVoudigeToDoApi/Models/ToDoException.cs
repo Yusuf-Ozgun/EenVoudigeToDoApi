@@ -7,7 +7,7 @@ namespace EenVoudigeToDoApi.Models
     {
         public ToDoException(string message) : base(message)
         {
-            //Test
+
         }
     }
 
