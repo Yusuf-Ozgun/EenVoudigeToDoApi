@@ -22,4 +22,4 @@ Met behulp van de krachtige Swagger kunnen we alle requests - net alsof we ze in
 
 ![image](https://user-images.githubusercontent.com/47563889/174710573-ae7cde67-d269-45fb-987a-a0cde7607fbb.png)
 
-<a href="[Swagger UI.pdf](https://github.com/Yusuf-Ozgun/EenVoudigeToDoApi/files/8945706/Swagger.UI.pdf)" target="_blank"> SWAGGER UI.PDF</a>
+<a href="https://github.com/Yusuf-Ozgun/EenVoudigeToDoApi/files/8945706/Swagger.UI.pdf" target="_blank"> SWAGGER UI.PDF</a>
