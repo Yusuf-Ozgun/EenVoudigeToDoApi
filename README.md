@@ -17,3 +17,5 @@ HttpPost:
 
 HttpPut:
 - Hiermee kunnen we Users, Boards & ToDos toevoegen, er wordt ook gecontroleerd of de User, Board OF ToDo al bestaat.
+
+Door behulp van de krachtige Swagger kunnen we alle requests - net alsof we ze in Postman zouden executen - uitvoeren.
