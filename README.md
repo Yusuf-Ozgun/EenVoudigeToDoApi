@@ -20,6 +20,6 @@ HttpPut:
 
 Met behulp van de krachtige Swagger kunnen we alle requests - net alsof we ze in Postman zouden executen - uitvoeren.
 
-<a href="https://github.com/Yusuf-Ozgun/EenVoudigeToDoApi/blob/master/Swagger%20UI.pdf">Swagger UI</a>
+Zie pdf voor Swagger UI requests: <a href="https://github.com/Yusuf-Ozgun/EenVoudigeToDoApi/blob/master/Swagger%20UI.pdf">Swagger UI</a>
 
 ![image](https://user-images.githubusercontent.com/47563889/174710573-ae7cde67-d269-45fb-987a-a0cde7607fbb.png)
