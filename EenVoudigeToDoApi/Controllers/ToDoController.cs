@@ -60,5 +60,6 @@ namespace EenVoudigeToDoApi.Controllers
             var toDoDb = _repo.GetToDo(id); _repo.UpdateToDo(toDo); 
             return new NoContentResult();
         }
+
     }
 }
